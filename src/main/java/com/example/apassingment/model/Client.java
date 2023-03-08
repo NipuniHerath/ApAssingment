@@ -1,4 +1,4 @@
-package com.example.apassingment;
+package com.example.apassingment.model;
 
 public class Client extends User{
     private String fname;
@@ -7,7 +7,17 @@ public class Client extends User{
     private String dob;
     private String nic;
 
+    private String JobRole;
+
     public Client() {
+    }
+
+    public String getJobRole() {
+        return JobRole;
+    }
+
+    public void setJobRole(String jobRole) {
+        JobRole = jobRole;
     }
 
     public String getFname() {

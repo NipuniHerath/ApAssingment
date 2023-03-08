@@ -1,4 +1,4 @@
-package com.example.apassingment;
+package com.example.apassingment.model;
 
 public abstract class User {
 
