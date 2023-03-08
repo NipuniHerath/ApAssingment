@@ -32,4 +32,23 @@ public class Account {
         connection.close();
         return client;
     }
+
+    public static boolean createClients(Client client) throws SQLException, ClassNotFoundException {
+        GetConnection getConnection  =  new Database();
+        Connection connection = getConnection.con();
+
+        String query ="insert into  danashop.account(username,password,firstname,lastname,address,dob,nic,joprole)values(?,?,?,?,?,?,?,'client')";
+
+        PreparedStatement ps  = connection.prepareStatement(query);
+        ps.setString(1,client.getUsername());
+        ps.setString(2,client.getPassword());
+        ps.setString(3,client.getFname());
+        ps.setString(4,client.getLname());
+        ps.setString(5,client.getAddress());
+        ps.setString(6,client.getDob());
+        ps.setString(7,client.getNic());
+        boolean rs = ps.executeUpdate()>0;
+        return rs;
+
+    }
 }
