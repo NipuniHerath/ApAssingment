@@ -50,4 +50,20 @@ public class ProdctMaintain  {
 
         return productsArray;
     }
+
+
+    public static product getproduct(int id) throws SQLException, ClassNotFoundException {
+        GetConnection connector = new Database();
+        Connection connection = connector.con();
+        String query = "";
+        PreparedStatement ps = connection.prepareStatement(query);
+        ResultSet rs = ps.executeQuery();
+        product product=new product();
+        if(rs.next())
+        {
+
+        }
+        return product;
+
+    }
 }
