@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Database implements GetConnection {
     @Override
-    public Connection connection() throws ClassNotFoundException, SQLException {
+    public Connection con() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         //establish connection
