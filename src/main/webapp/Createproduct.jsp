@@ -14,60 +14,48 @@
 <body>
 
 <div class="container">
-  <h2>CREATE ACCOUNT</h2>
+  <h2>Add products</h2>
   <form class="form-horizontal" action="Servlet_Login" method="post">
     <div class="form-group">
-      <label class="control-label col-sm-2" for="username">User Name:</label>
+      <label class="control-label col-sm-2" for="productname">product Name:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+        <input type="text" class="form-control" id="productname" placeholder="Enter product name" name="productname">
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <label class="control-label col-sm-2" for="Caty">Categories:</label>
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+        <input type="password" class="form-control" id="Caty" placeholder="Enter Categories" name="Caty">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="fname">first name:</label>
+      <label class="control-label col-sm-2" for="price"> price:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname">
+        <input type="text" class="form-control" id="price" placeholder="Enter price" name="price">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="lname">Lastname:</label>
+      <label class="control-label col-sm-2" for="Qty">Qty:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="lname" placeholder="Enter Last name" name="lname">
+        <input type="text" class="form-control" id="Qty" placeholder="Enter Qty" name="Qty">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="address">Address:</label>
+      <label class="control-label col-sm-2" for="Description">Description:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
+        <input type="text" class="form-control" id="Description" placeholder="Enter Description" name="Description">
       </div>
     </div>
 
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="dob">Date of Birth:</label>
-      <div class="col-sm-10">
-        <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth" name="dob">
-      </div>
-    </div>
 
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="nic">NIC:</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="nic" placeholder="Enter NIC" name="nic">
-      </div>
-    </div>
 
 
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default" NAME="action" value="create">SIGN IN</button>
+        <button type="submit" class="btn btn-default" NAME="action" value="create">Add product</button>
       </div>
     </div>
   </form>

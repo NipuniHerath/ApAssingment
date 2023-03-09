@@ -13,7 +13,7 @@
 <body>
 
 <div class="container">
-  <h2>CREATE ACCOUNT</h2>
+  <h2>Loan Request</h2>
   <form class="form-horizontal" action="Servlet_Login" method="post">
 
 

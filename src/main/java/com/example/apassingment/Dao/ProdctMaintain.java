@@ -11,7 +11,7 @@ public class ProdctMaintain  {
         GetConnection getConnection  =  new Database();
         Connection connection = getConnection. con();
 
-        String query="";
+        String query="insert into  danashop.product (productname,categories,price,Qty,Description)values(?,?,?,?);";
         PreparedStatement ps = connection.prepareStatement(query);
         boolean result=ps.executeUpdate()>0;
         return result;

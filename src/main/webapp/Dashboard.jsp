@@ -23,39 +23,55 @@
   <a class="navbar-brand" href="#">Logo</a>
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">List Product</a>
+      <a class="nav-link" href="Createproduct.jsp">List Product</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
     </li>
   </ul>
 </nav>
+<br><br><br>
     <div class="container">
-  <h2>Dark Striped Table</h2>
-  <p>Combine .table-dark and .table-striped to create a dark, striped table:</p>
+
   <table class="table table-dark table-striped">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>Product name</th>
+        <th>Categories</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td>saman saban</td>
+        <td>soap</td>
+        <td>34.00</td>
+        <td>100</td>
+        <td>sadsadsada</td>
+        <td>  <button type="submit" class="btn btn-default" NAME="action" value="create">Edit</button></td>
+        <td> <button type="submit" class="btn btn-danger" NAME="action" value="create">Delete</button></td>
       </tr>
       <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
+        <td>washing pouwder</td>
+        <td>dsd</td>
+        <td>125</td>
+        <td>120</td>
+        <td>dsddasad</td>
+        <td> <button type="submit" class="btn btn-default" NAME="action" value="create">Edit</button></td>
+        <td> <button type="submit" class="btn btn-danger" NAME="action" value="create">Delete</button></td>
       </tr>
       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>car</td>
+        <td>toy</td>
+        <td>1000</td>
+        <td>34</td>
+        <td>remote control</td>
+        <td> <button type="submit" class="btn btn-default" NAME="action" value="create">Edit</button></td>
+        <td><button type="submit" class="btn btn-danger" NAME="action" value="create">Delete</button></td>
       </tr>
     </tbody>
   </table>
